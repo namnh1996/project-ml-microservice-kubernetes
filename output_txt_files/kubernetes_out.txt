@@ -4,3 +4,27 @@ api    0/1     ImagePullBackOff   0               4h18m
 app    1/1     Running            1 (4h10m ago)   4h25m
 Forwarding from 127.0.0.1:8000 -> 80
 Forwarding from [::1]:8000 -> 80
+
+macbook@Macbooks-MacBook-Pro  ~/Documents/Studying/DevOps Udacity/project-ml-microservice-kubernetes   master  kubectl get pod   
+NAME   READY   STATUS             RESTARTS        AGE
+api    0/1     ImagePullBackOff   0               4h36m
+app    1/1     Running            1 (4h28m ago)   4h43m
+
+macbook@Macbooks-MacBook-Pro  ~/Documents/Studying/DevOps Udacity/project-ml-microservice-kubernetes   master ●  kubectl logs pods/app
+ * Serving Flask app "app" (lazy loading)
+ * Environment: production
+   WARNING: Do not use the development server in a production environment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Running on http://0.0.0.0:80/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 815-195-110
+
+macbook@Macbooks-MacBook-Pro  ~/Documents/Studying/DevOps Udacity/project-ml-microservice-kubernetes   master ●  ./make_prediction.sh 
+Port: 8080
+{
+  "prediction": [
+    20.35373177134412
+  ]
+}
