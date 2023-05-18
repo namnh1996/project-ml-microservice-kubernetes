@@ -1,1 +1,6 @@
 <paste log output from Kubernetes-mediated prediction, here>
+NAME   READY   STATUS             RESTARTS        AGE
+api    0/1     ImagePullBackOff   0               4h18m
+app    1/1     Running            1 (4h10m ago)   4h25m
+Forwarding from 127.0.0.1:8000 -> 80
+Forwarding from [::1]:8000 -> 80
